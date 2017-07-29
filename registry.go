@@ -26,7 +26,7 @@ func FromName(s string) (Locker, error) {
 	return locker, nil
 }
 
-func AddLocker(s Locker) {
+func Register(s Locker) {
 	lockers.Store(strings.ToLower(s.Name()), s)
 }
 

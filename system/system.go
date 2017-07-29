@@ -57,5 +57,5 @@ func (locker *locker) Unlock(id string) error {
 }
 
 func init() {
-	lock.AddLocker(&locker{})
+	lock.Register(&locker{})
 }
