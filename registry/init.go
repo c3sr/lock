@@ -1,4 +1,4 @@
-package consul
+package registry
 
 import (
 	"github.com/rai-project/config"

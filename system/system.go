@@ -14,10 +14,15 @@ type locker struct {
 }
 
 func New() lock.Locker {
-	return &locker{
-		locks: make(map[string]*systemlock.FileMutex),
-		mutex: new(sync.RWMutex),
-	}
+	locker := &locker{}
+	locker.Init()
+	return locker
+}
+
+func (locker *Locker) Init() error {
+	locker.locks = make(map[string]*systemlock.FileMutex)
+	locker.mutex = new(sync.RWMutex)
+	return nil
 }
 
 func (locker *locker) Name() string {

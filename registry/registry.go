@@ -6,6 +6,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rai-project/libkv/store"
+	"github.com/rai-project/lock"
 	"github.com/rai-project/registry"
 )
 
@@ -27,15 +28,19 @@ type Locker struct {
 
 // New constructs a new locker using the provided client.
 func New(client registry.Store) *Locker {
-	return &Locker{
-		Client: client,
-		locks:  make(map[string]store.Locker),
-		mutex:  new(sync.RWMutex),
-	}
+	locker := new(Locker)
+	locker.Client = client
+	locker.Init()
+	return locker
+}
+func (locker *Locker) Init() error {
+	locker.locks = make(map[string]store.Locker)
+	locker.mutex = new(sync.RWMutex)
+	return nil
 }
 
-func (locker *Locker) Name()  {
-  return "registry"
+func (locker *Locker) Name() string {
+	return "registry"
 }
 
 // LockUpload tries to obtain the exclusive lock.
@@ -97,7 +102,7 @@ func (locker *Locker) Unlock(id string) error {
 	// has not been invoked before or UnlockUpload multiple times.
 	lock, ok := locker.locks[id]
 	if !ok {
-		return registry.ErrLockNotHeld
+		return errors.Errorf("the lock %s is not being held", id)
 	}
 
 	defer delete(locker.locks, id)
@@ -106,5 +111,5 @@ func (locker *Locker) Unlock(id string) error {
 }
 
 func init() {
-  lock.Register(&Locker{})
+	lock.Register(&Locker{})
 }

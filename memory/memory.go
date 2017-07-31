@@ -7,13 +7,18 @@ import (
 	"github.com/rai-project/lock"
 )
 
-type locker struct {
+type Locker struct {
 	locks map[string]*sync.Mutex
 	mutex *sync.RWMutex
 }
 
 func New() lock.Locker {
-	return &locker{
+	locker := new(Locker)
+	locker.Init()
+	return locker
+}
+func (locker *Locker) Init() error {
+	*locker = Locker{
 		locks: make(map[string]*sync.Mutex),
 		mutex: new(sync.RWMutex),
 	}
