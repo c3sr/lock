@@ -6,7 +6,7 @@ import:
 - package: github.com/rai-project/logger
 - package: github.com/rai-project/systemlock
 - package: github.com/sirupsen/logrus
-  version: ~1.0.2
+  version: ^1.0.0
 - package: golang.org/x/sync
   subpackages:
   - syncmap
