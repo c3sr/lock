@@ -35,7 +35,7 @@
 
 [[constraint]]
   name = "github.com/rai-project/libkv"
-  version = "0.2.18"
+  branch = "master"
 
 [[constraint]]
   branch = "master"

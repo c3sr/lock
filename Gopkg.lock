@@ -210,6 +210,7 @@
   revision = "a501614c3b8d510e2ae9a92ffa9477d880a48157"
 
 [[projects]]
+  branch = "master"
   name = "github.com/rai-project/libkv"
   packages = [
     ".",
@@ -220,8 +221,7 @@
     "store/mock",
     "store/zookeeper"
   ]
-  revision = "f01cf81553df65a5e18bce2503a3db96b9059cd7"
-  version = "v0.2.18"
+  revision = "11c2565b618ffc9a85fd1842155c9a3d85422bd4"
 
 [[projects]]
   branch = "master"
@@ -362,12 +362,6 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/net"
-  packages = ["context"]
-  revision = "afe8f62b1d6bbd81f31868121a50b06d8188e1f9"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/sync"
   packages = ["syncmap"]
   revision = "1d60e4601c6fd243af51cc01ddf169918a5407ca"
@@ -412,6 +406,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "36d8ceabb5aad8b674080f97d3cc3328174e79e1a3134f00de3b7493f74d6b20"
+  inputs-digest = "be3c41713ed2ae7f1f9779a00d50433a4b44ee6f8292b7ceaa6a09b564c947a1"
   solver-name = "gps-cdcl"
   solver-version = 1
