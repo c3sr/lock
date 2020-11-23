@@ -1,6 +1,6 @@
 # Gopkg.toml example
 #
-# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
 # for detailed Gopkg.toml documentation.
 #
 # required = ["github.com/user/thing/cmd/thing"]
@@ -26,32 +26,32 @@
 
 
 [[constraint]]
+  branch = "master"
+  name = "github.com/c3sr/config"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/c3sr/libkv"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/c3sr/logger"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/c3sr/registry"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/c3sr/systemlock"
+
+[[constraint]]
   name = "github.com/pkg/errors"
-  version = "0.8.0"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/rai-project/config"
-
-[[constraint]]
-  name = "github.com/rai-project/libkv"
-  branch = "master"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/rai-project/logger"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/rai-project/registry"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/rai-project/systemlock"
+  version = "0.8.1"
 
 [[constraint]]
   name = "github.com/sirupsen/logrus"
-  version = "1.4.1"
+  version = "1.7.0"
 
 [[constraint]]
   branch = "master"

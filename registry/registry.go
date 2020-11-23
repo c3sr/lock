@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/rai-project/libkv/store"
-	"github.com/rai-project/lock"
-	"github.com/rai-project/registry"
+	"github.com/c3sr/libkv/store"
+	"github.com/c3sr/lock"
+	"github.com/c3sr/registry"
 )
 
 type Locker struct {
