@@ -47,7 +47,7 @@ func (locker *Locker) Name() string {
 func (locker *Locker) Lock(id string) error {
 	lock, err := locker.Client.NewLock(id+"/"+".lock", &store.LockOptions{
 		Value: []byte(".lock"),
-		TTL:   time.Second,
+		TTL:   20 * time.Second,
 	})
 	if err != nil {
 		return err

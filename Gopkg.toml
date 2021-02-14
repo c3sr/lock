@@ -26,24 +26,20 @@
 
 
 [[constraint]]
-  branch = "master"
   name = "github.com/c3sr/config"
+  version = "0.1.0"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/c3sr/libkv"
+  version = "0.3.0"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/c3sr/logger"
+  version = "0.1.0"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/c3sr/registry"
-
-[[constraint]]
-  branch = "master"
-  name = "github.com/c3sr/systemlock"
+  version = "0.1.0"
 
 [[constraint]]
   name = "github.com/pkg/errors"
