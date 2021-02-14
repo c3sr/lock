@@ -58,16 +58,15 @@
   version = "v0.0.3"
 
 [[projects]]
-  branch = "master"
-  digest = "1:3e3f58d4204ffe581c8bf7140026b17cfa55704e2e4f534398a234a19bd08af1"
+  digest = "0:"
   name = "github.com/c3sr/config"
   packages = ["."]
   pruneopts = "UT"
-  revision = "e9d07ff805c35518081968c3cdb61e2a452cacff"
+  revision = "35ed8e2450bf72580413486a801a469faeb04189"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:e055cca081a3b2986aa48b07d8069fef83fa3a1df1e0bdd4bf9ef676c903c163"
+  digest = "0:"
   name = "github.com/c3sr/libkv"
   packages = [
     ".",
@@ -76,27 +75,27 @@
     "store/mock",
   ]
   pruneopts = "UT"
-  revision = "e1d73a0bfd37479cd54307ed653dc251d7769b79"
+  revision = "c4babe84b7d1631c16262cec87705aec2398092b"
+  version = "v0.3.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:fee881074ab4b9858f916e89041fcd6db2c8046ebdb1faf3238b79d5d8b6394c"
+  digest = "0:"
   name = "github.com/c3sr/logger"
   packages = ["."]
   pruneopts = "UT"
-  revision = "3a1b4f2fe0a8cff889e1ee8fbda6967bd9c0d550"
+  revision = "159591d2749003f68b0dacfadf03ab90a18f66c1"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:960862a51de332377b47bf9ab87c0e4611011ab695207af0d2e5eba1c8023167"
+  digest = "0:"
   name = "github.com/c3sr/registry"
   packages = ["."]
   pruneopts = "UT"
-  revision = "bd8759510b62379eb1d4693db2c9d9a98fe2b8d3"
+  revision = "d4a03737b51b2c0f3af086cfe23a5d1bc4799108"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:e5eb682c230f1ffaefef73d8ed83b7b516fdbc0912bb9fc4ea5485ab0994b00e"
+  digest = "0:"
   name = "github.com/c3sr/serializer"
   packages = [
     ".",
@@ -105,31 +104,24 @@
     "jsonpb",
   ]
   pruneopts = "UT"
-  revision = "cdbfac2bf33ce9a86b7d33e2a10fad9c04892054"
+  revision = "90e6ae01ee1bfad0efb0ab324347568b7895480a"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:49a29f997f33276b96123e469f8c5df49a888494a8b712379f9e34a304d62a3b"
-  name = "github.com/c3sr/systemlock"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "df062553950c64e391dadee281f0e396a1327bc5"
-
-[[projects]]
-  branch = "master"
-  digest = "1:76f07a4f650254ba509f97107408ba2d3923f21490ed983fdd3d79e8c6b7838b"
+  digest = "0:"
   name = "github.com/c3sr/utils"
   packages = ["."]
   pruneopts = "UT"
-  revision = "1131f94737fa162c7abd799d49e0e61d28827bd7"
+  revision = "8c94d0bf9baa1095effd041da69653e1103b68c7"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:da993593fb42403a3695f952e3666346fc3b510862c3a1086006c7566fa004b9"
+  digest = "0:"
   name = "github.com/c3sr/vipertags"
   packages = ["."]
   pruneopts = "UT"
-  revision = "c54404b591155101716768833b5eee64aca9a3cd"
+  revision = "b8a9fd68c520fe07ffbf7f642b7e73eac2a0434f"
+  version = "v0.1.0"
 
 [[projects]]
   digest = "1:f438d91be142877c3ad83157992c91de787ddfbddcc2a7da1ef6ef61606cadc4"
@@ -922,7 +914,6 @@
     "github.com/c3sr/libkv/store",
     "github.com/c3sr/logger",
     "github.com/c3sr/registry",
-    "github.com/c3sr/systemlock",
     "github.com/pkg/errors",
     "github.com/sirupsen/logrus",
     "golang.org/x/sync/syncmap",
